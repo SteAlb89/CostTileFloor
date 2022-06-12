@@ -9,9 +9,9 @@ namespace CostTileFloor
             Console.WriteLine("1: Rectangle  2: Triangle");
             string userInput = Console.ReadLine();
 
-            if ( userInput == "1"  )
+            if (userInput == "1")
             {
-                
+
 
                 Console.Write("Please enter the width: ");
                 int width = Convert.ToInt32(Console.ReadLine());
@@ -30,7 +30,7 @@ namespace CostTileFloor
             }
             else
             {
-                
+
                 Console.Write("Please enter the width: ");
                 int width = Convert.ToInt32(Console.ReadLine());
                 Console.Write("Please enter the length: ");
@@ -48,11 +48,6 @@ namespace CostTileFloor
 
 
             }
-
-
-            
-           
-
          
         }
     }  
