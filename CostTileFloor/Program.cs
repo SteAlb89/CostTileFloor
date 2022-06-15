@@ -6,7 +6,6 @@ namespace CostTileFloor
     {
         static void Main(string[] args)
         {
-
             Console.WriteLine("Choose the shape of room - 1: Rectangle  2: Triangle");
             string userInput = Console.ReadLine();
 
@@ -16,17 +15,20 @@ namespace CostTileFloor
             Console.Write("Please enter the length: ");
             int length = Convert.ToInt32(Console.ReadLine());
 
+            Console.WriteLine("Please enter the cost per unit: ");
+            int unit = Convert.ToInt32(Console.ReadLine());
+
+            double rectangleArea = Convert.ToDouble(width * length * unit);
+            double triangleArea = Convert.ToDouble(width * length / 2) * unit ;
+
             if (userInput == "1")
             {
-                double rectangleArea = Convert.ToDouble(width * length);
-                Console.WriteLine($"The total cost of labor is : $ {rectangleArea}  ");
+                Console.WriteLine($"If the spate of room is rectangle , the price is : {rectangleArea}");
             }
             else
             {
-                double triangleArea = Convert.ToDouble(width * length) / 2;
-                Console.WriteLine($"The total cost of labor is : $ {triangleArea}  ");
-
-            }      
+                Console.WriteLine($"The price for flooring it cost : ${triangleArea}");
+            }        
         }
     }
 }
