@@ -11,7 +11,7 @@ namespace CostTileFloor
 
             if (userInput != "1" && userInput != "2")
             {
-                Console.WriteLine("You should choose or first option , or second option !");
+                Console.WriteLine("You should choose or number 1 , or number 2 !");
                 return;
             }
 
