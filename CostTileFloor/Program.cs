@@ -9,6 +9,12 @@ namespace CostTileFloor
             Console.WriteLine("Choose the shape of room - 1: Rectangle  2: Triangle");
             string userInput = Console.ReadLine();
 
+            if (userInput != "1" && userInput != "2")
+            {
+                Console.WriteLine("You should choose or first option , or second option !");
+                return;
+            }
+
             Console.Write("Please enter the width: ");
             int width = Convert.ToInt32(Console.ReadLine());
 
